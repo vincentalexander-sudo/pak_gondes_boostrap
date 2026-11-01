@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak & Pesanan | Ayam Pak Gondesss</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-dark text-center text-light py-2 small">Buka setiap hari 10.00 - 22.00 WIB &bull; WA 0812-3456-7890 &bull; Grogol, Jakarta Barat</div>
+  <header class="site-header sticky-top bg-white">
+    <div class="container d-flex align-items-center justify-content-between gap-3 flex-wrap py-3">
+      <a class="text-decoration-none" href="Beranda.html"><strong class="d-block text-danger fs-5">Ayam Pak Gondesss</strong><small class="text-secondary">KHAS GROGOL PEDAS NIKMAT</small></a>
+      <nav class="d-flex align-items-center gap-3 flex-wrap fw-semibold"><a href="Beranda.html" class="nav-link p-0">Beranda</a><div class="dropdown"><button class="nav-link dropdown-toggle p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button><ul class="dropdown-menu"><li><a class="dropdown-item" href="menu.html">Semua Menu</a></li><li><a class="dropdown-item" href="menu.html#paket-nasi">Paket Nasi</a></li><li><a class="dropdown-item" href="menu.html#paket-indomie">Paket Indomie</a></li><li><a class="dropdown-item" href="menu.html#ala-carte">Ala Carte</a></li><li><a class="dropdown-item" href="menu.html#minuman">Minuman</a></li></ul></div><a href="Tentang.html" class="nav-link p-0">Tentang Kami</a><a href="kontak_pesan.html" class="nav-link p-0 text-danger">Kontak</a></nav>
+      <a class="btn btn-danger" href="kontak_pesan.html">Pesan Sekarang</a>
+    </div>
+  </header>
+  <main>
+    <section class="bg-body-tertiary py-5">
+      <div class="container">
+        <span class="badge rounded-pill bg-warning-subtle text-danger-emphasis fw-bold">LAYANAN RAMAH MAHASISWA &amp; KANTOR</span>
+        <h1>Pesan Sekarang &amp; Hubungi Kami</h1>
+        <p>Isi formulir pesanan di bawah untuk reservasi dine-in, take away, atau pengiriman ke kos/kantor di sekitar Grogol.</p>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container"><div class="row g-4">
+        <form class="card p-4 col-lg-8" action="#" method="post">
+          <span class="badge rounded-pill bg-warning-subtle text-danger-emphasis fw-bold">FORMULIR PEMESANAN</span>
+          <h2>Detail Pembelian Anda</h2>
+          <p class="text-secondary mb-3">Konfirmasi cepat via WhatsApp.</p>
+          <div class="mb-3"><label class="form-label" for="nama">Nama Lengkap <span>*</span></label><input type="text" class="form-control" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required></div>
+          <div class="mb-3"><label class="form-label" for="wa">Nomor WhatsApp <span>*</span></label><input type="tel" class="form-control" id="wa" name="wa" placeholder="Contoh: 081234567890" required><p class="small text-secondary">Pastikan nomor aktif untuk konfirmasi kurir / admin.</p></div>
+          <div class="mb-3"><label class="form-label" for="kategori">Kategori Menu <span>*</span></label><select class="form-select" id="kategori" name="kategori" required><option value="">-- Pilih Kategori --</option><option>Paket Nasi</option><option>Paket Indomie</option><option>Ala Carte &amp; Cemilan</option><option>Aneka Minuman</option></select></div>
+          <div class="mb-3"><label class="form-label" for="menu">Menu Spesifik <span>*</span></label><input type="text" class="form-control" id="menu" name="menu" placeholder="Contoh: Nasi Ayam Geprek Sambal Gondes" required></div>
+          <div class="mb-3"><label class="form-label" for="jumlah">Jumlah Porsi / Box <span>*</span></label><input type="number" class="form-control" id="jumlah" name="jumlah" value="1" min="1" required><p class="small text-secondary">Pemesanan di atas 15 porsi untuk rapat/acara kampus, konfirmasi via WA H-1.</p></div>
+          <fieldset class="mb-3"><legend>Jenis Layanan <span>*</span></legend><label class="form-check d-block"><input class="form-check-input" type="radio" name="layanan" value="Makan di Tempat" checked> <span><strong>Makan di Tempat</strong><br><small class="text-secondary">Reservasi meja warung (dine-in santai &amp; higienis)</small></span></label><label class="form-check d-block"><input class="form-check-input" type="radio" name="layanan" value="Take Away"> <span><strong>Take Away</strong><br><small class="text-secondary">Bungkus rapi, ambil langsung di warung tanpa antre</small></span></label><label class="form-check d-block"><input class="form-check-input" type="radio" name="layanan" value="Delivery Grogol"> <span><strong>Delivery Grogol</strong><br><small class="text-secondary">Antar ke kos/kantor area Trisakti, UNTAR &amp; sekitarnya</small></span></label></fieldset>
+          <div class="mb-3"><label class="form-label" for="catatan">Level Pedas &amp; Catatan Khusus</label><textarea class="form-control" id="catatan" name="catatan" rows="4" placeholder="Level pedas 1-5, tanpa timun, sambal dipisah, nomor meja, atau alamat pengiriman..."></textarea><p class="small text-secondary">Saran cepat: Level 3 &bull; Level 5 Nampol &bull; Sambal dipisah &bull; No timun</p></div>
+          <div class="mb-3"><label class="d-flex align-items-start gap-2"><input type="checkbox" name="setuju" required> Saya menyetujui detail pesanan sudah benar dan bersedia dihubungi via WhatsApp oleh admin Ayam Pak Gondesss.</label></div>
+          <button class="btn btn-danger" type="submit">Kirim Pesanan Sekarang</button>
+          <p class="small text-secondary mt-2">Tidak dipungut biaya pendaftaran formulir.</p>
+        </form>
+        <aside class="col-lg-4">
+          <div class="d-flex flex-column gap-4">
+            <div class="card p-0 overflow-hidden">
+              <div class="ratio ratio-4x3">
+                <iframe title="Lokasi Ayam Pak Gondesss, Jl. Dr. Susilo Raya No. 42, Grogol" src="https://www.google.com/maps?q=Jl.+Dr.+Susilo+Raya+No.+42+Grogol+Petamburan+Jakarta+Barat&amp;output=embed" class="border-0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="card p-4">
+              <span class="badge bg-warning-subtle text-warning-emphasis align-self-start mb-2">FAST RESPONSE</span>
+              <h3 class="mb-3">Kontak &amp; Jam Layanan</h3>
+              <div class="d-flex justify-content-between align-items-start gap-3 border-bottom py-2">
+                <strong>Jam Buka</strong>
+                <span class="text-end">10:00 - 22:00 WIB<br><small class="text-secondary">Senin - Minggu</small></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-start gap-3 py-2">
+                <strong>WhatsApp Admin</strong>
+                <a class="text-nowrap" href="https://wa.me/6281234567890">+62 812-3456-7890</a>
+              </div>
+              <p class="small text-secondary mt-2 mb-0">Gratis antar radius 1 km untuk mahasiswa, kosan Susilo, Makaliwe, dan sekitarnya (minimal 2 porsi).</p>
+              <a class="btn btn-danger align-self-start mt-3" href="https://wa.me/6281234567890">Hubungi via WhatsApp</a>
+            </div>
+            <div class="card p-4">
+              <h3 class="mb-3">Tautan Terkait</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="Beranda.html">Kembali ke Beranda</a></li>
+                <li><a href="menu.html">Lihat Harga Menu</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-12 col-md-6 col-lg-3"><h4 class="h5 text-warning mb-3">Ayam Pak Gondesss</h4><p>Warung UMKM kuliner otentik di Grogol, Jakarta Barat. Ayam goreng &amp; geprek bumbu rempah dengan sambal pedas nampol.</p><p><span class="badge rounded-pill bg-warning text-dark">100% HALAL</span></p></div>
+        <div class="col-12 col-md-6 col-lg-3"><h4 class="h5 text-warning mb-3">Navigasi Cepat</h4><ul class="list-unstyled d-grid gap-2 mb-0"><li><a class="d-block text-decoration-none" href="Beranda.html">Beranda</a></li><li><a class="d-block text-decoration-none" href="menu.html">Daftar Menu</a></li><li><a class="d-block text-decoration-none" href="Tentang.html">Tentang Kami</a></li><li><a class="d-block text-decoration-none" href="kontak_pesan.html">Kontak &amp; Pesanan</a></li></ul></div>
+        <div class="col-12 col-md-6 col-lg-3"><h4 class="h5 text-warning mb-3">Jam Operasional</h4><p>Setiap Hari<br>10.00 - 22.00 WIB</p><p>Dine-in, Takeaway &amp; Delivery</p></div>
+        <div class="col-12 col-md-6 col-lg-3"><h4 class="h5 text-warning mb-3">Kontak &amp; Lokasi</h4><p>Jl. Dr. Susilo Raya No. 42, Grogol Petamburan, Jakarta Barat 11450</p><p>WA: +62 812-3456-7890</p><p>Instagram @ayampakgondes<br>TikTok @ayampakgondes<br>GoFood &amp; GrabFood</p></div>
+      </div>
+      <p class="border-top mt-4 pt-3 small text-center">&copy; 2025 Ayam Pak Gondesss Grogol. Proyek Web HTML &amp; CSS UMKM Kuliner.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
